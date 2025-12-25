@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
 
         </Navbar>
       </header>
-        {children}
+        <main className="min-h-[calc(100vh-300px)]">
+          {children}
+        </main>
         <footer>
           <Footer></Footer>
         </footer>
