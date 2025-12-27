@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
+import AddToCart from "./AddToCart";
 
 const ProductCard = ({ product }) => {
   const {
@@ -70,10 +71,9 @@ const ProductCard = ({ product }) => {
 
         {/* Button */}
         <div className="card-actions mt-2">
-          <button className="btn btn-primary btn-sm w-full gap-2">
-            <FaShoppingCart />
-            Add to Cart
-          </button>
+          <div className="w-full">
+            <AddToCart product={product}></AddToCart>
+          </div>
           <Link href={`/products/${_id}`} className="btn  btn-sm w-full gap-2">
            
             Details

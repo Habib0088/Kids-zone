@@ -18,5 +18,5 @@ export const getSingleProducts = async (id) => {
   const collection = await dbConnect("products");
   const product = await collection.findOne(query);
 
-  return product || {};
+  return {product, _id:product._id.toString()} || {};
 };

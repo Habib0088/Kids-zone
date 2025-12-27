@@ -1,5 +1,6 @@
 import Logo from "@/components/Logo";
 import Navlink from "@/components/Navlink";
+import Link from "next/link";
 import React from "react";
 import { FaCartPlus } from "react-icons/fa";
 
@@ -54,7 +55,7 @@ const Navbar = () => {
             <button className="btn bg-primary"><FaCartPlus className=" bg-primary outline-primary text-white text-sm" /></button>
 
 
-          <button className="btn outline-primary">Login</button>
+          <Link href={'/login'} className="btn outline-primary">Login</Link>
         </div>
       </div>
     </div>
